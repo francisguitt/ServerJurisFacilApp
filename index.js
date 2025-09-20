@@ -6,13 +6,14 @@ const apiRoutes = require("./routes/api");
 const app = express();
 app.use(express.json());
 
-const corsOptions = {
-  origin: ["https://serverjurisfacilapp.onrender.com/"], // libera apenas esse origin
-  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-  allowedHeaders: ["Content-Type", "Authorization"],
-};
+app.use(cors());
+// const corsOptions = {
+//   origin: ["https://serverjurisfacilapp.onrender.com/"], // libera apenas esse origin
+//   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+//   allowedHeaders: ["Content-Type", "Authorization"],
+// };
 
-app.use(cors(corsOptions));
+// app.use(cors(corsOptions));
 
 app.use("/api", apiRoutes);
 
