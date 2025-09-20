@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const axios = require('axios');
 
-router.post('/dados', async (req, res) => {
+router.post('/gtt', async (req, res) => {
     try {
         const payload = req.body; // receber o corpo enviado pelo Cordova
 
