@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
 
 const corsOptions = {
-  origin: ["http://127.0.0.1:5501", "http://192.168.15.4:5501"], // libera apenas esse origin
+  origin: ["https://serverjurisfacilapp.onrender.com/"], // libera apenas esse origin
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"],
 };
