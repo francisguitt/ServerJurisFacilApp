@@ -20,4 +20,13 @@ router.post('/gtt', async (req, res) => {
     }
 });
 
+
+//ROTA: Retorna a chave PIX
+router.get("/pix", (req, res) => {
+  const pixKey = "466a9b06-3faf-44f5-917e-640d96a07703";
+  res.json({ pixKey: pixKey });
+});
+
+
+
 module.exports = router;
